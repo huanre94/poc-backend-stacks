@@ -25,5 +25,12 @@ public class SaludoController {
 	public String Despedir(@RequestBody String nombre) {
 		return "Hola Adios!" + nombre;
 	}
+
+	//postmapping receiving body
+	@PostMapping("/chaoBody")
+	public String DespedirBody(@RequestBody String body) {
+		return "Hola Adios! " + body;
+	}
+	
 	
 }
